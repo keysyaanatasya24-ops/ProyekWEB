@@ -1,0 +1,983 @@
+/* Reset Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #c0392b; /* Merah Bata Khas Jawa Timur */
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Konten Utama */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tampilan Grid untuk Daftar Kuliner */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Kartu Kuliner */
+.kuliner-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.kuliner-card:hover {
+    transform: translateY(-5px);
+}
+
+.kuliner-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 20px;
+}
+
+
+/* Import Google Font (Poppins untuk tampilan modern) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- 1. Reset Dasar dan Tipografi --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Background sangat terang */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #2c3e50; /* Dark Blue untuk Heading */
+}
+
+/* --- 2. Header & Navigasi Modern --- */
+header {
+    background-color: #ffffff; /* Putih bersih */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    color: #e67e22; /* Aksen Oranye/Kuning Kunyit untuk Branding */
+    font-size: 1.8em;
+}
+
+nav a {
+    color: #333;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: 0.95em;
+}
+
+nav a:hover {
+    color: #e67e22; /* Hover menggunakan warna aksen */
+}
+
+/* --- 3. Konten Utama dan Tata Letak --- */
+main {
+    padding: 40px 20px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    position: relative;
+}
+
+/* Garis bawah dekoratif pada H2 */
+main h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #e67e22;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+/* --- 4. Tampilan Grid & Kartu Kuliner (Card) --- */
+.grid-container {
+    display: grid;
+    /* Grid dengan minimum lebar 320px */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 30px;
+}
+
+.kuliner-card {
+    background-color: white;
+    border-radius: 12px;
+    /* Bayangan lebih tegas tapi lembut (Modern Shadow) */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    overflow: hidden;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+.kuliner-card:hover {
+    transform: translateY(-8px); /* Efek mengangkat */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar saat hover */
+}
+
+.kuliner-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.card-body p {
+    color: #666;
+    font-size: 0.95em;
+}
+
+strong {
+    color: #e67e22; /* Harga menggunakan warna aksen */
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+/* --- 5. Desain Tombol (Button) --- */
+.card-body button {
+    background-color: #3498db; /* Biru cerah sebagai tombol utama */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.card-body button:hover {
+    background-color: #2980b9;
+}
+
+
+/* --- 6. Footer --- */
+footer {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #ecf0f1; /* Abu-abu terang */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* --- 7. Responsifitas Dasar --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    .kuliner-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* Import Google Font (Montserrat untuk modern, profesional, dan tebal) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+
+/* --- 1. Reset Dasar dan Latar Belakang Parallax --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Dark Mode Elegance */
+    background: #1c1c1c; 
+    color: #e0e0e0; /* Warna teks terang */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    /* Latar belakang Parallax (perlu penyesuaian di HTML/JS untuk efek penuh) */
+    background-image: url('images/surabaya-background.jpg'); /* Ganti dengan gambar kota/kuliner resolusi tinggi */
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    font-weight: 900; /* Extra Bold */
+    color: #f7b731; /* Aksen Kuning Emas/Kunyit */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow untuk kontras */
+}
+
+/* --- 2. Header & Navigasi Dinamis --- */
+header {
+    /* Glassmorphism Effect */
+    background: rgba(44, 62, 80, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+nav a {
+    color: #ffffff;
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Efek Underline Kreatif saat Hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #f7b731;
+    transition: width 0.3s ease-out;
+    border-radius: 2px;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* --- 3. Konten Utama dan Tata Letak Grid --- */
+main {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    z-index: 10; /* Pastikan konten di atas background parallax */
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 40px;
+}
+
+/* --- 4. Kartu Kuliner Glassmorphism (Card) --- */
+.kuliner-card {
+    /* Glassmorphism pada Card */
+    background: rgba(255, 255, 255, 0.05); /* Sedikit transparan */
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.kuliner-card:hover {
+    transform: scale(1.03); /* Sedikit membesar saat hover */
+    box-shadow: 0 15px 50px 0 rgba(247, 183, 49, 0.5); /* Glow aksen */
+}
+
+.kuliner-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.kuliner-card:hover img {
+    transform: scale(1.05) rotateZ(1deg); /* Efek zoom/putar halus */
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.card-body p {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+strong {
+    color: #ff9933; /* Warna aksen yang menonjol */
+    font-weight: 700;
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* --- 5. Desain Tombol (Neumorphism-like Button) --- */
+.card-body button {
+    background: #f7b731; 
+    color: #1c1c1c;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px; /* Bentuk pil */
+    cursor: pointer;
+    font-weight: 700;
+    margin-top:
+
+
+
+
+
+
+
+
+
+
+
+/* --- CSS Tambahan untuk Filter Controls --- */
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+#filter-search, #filter-kategori {
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    font-size: 1em;
+    width: 300px;
+    transition: all 0.3s ease;
+    /* Glassmorphism ringan pada input/select */
+    backdrop-filter: blur(5px);
+}
+
+#filter-search::placeholder {
+    color: #a0a0a0;
+}
+
+#filter-search:focus, #filter-kategori:focus {
+    border-color: #f7b731;
+    box-shadow: 0 0 10px rgba(247, 183, 49, 0.5);
+    outline: none;
+}
+
+/* Teks not found */
+.not-found {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ff6b6b;
+    grid-column: 1 / -1; /* Membuat teks not found menempati seluruh lebar grid */
+    padding: 50px;
+    background: rgba(255, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+/* Styling tambahan di Card Body */
+.category-tag {
+    display: inline-block;
+    background-color: #f7b731;
+    color: #1c1c1c;
+    font-size: 0.75em;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.card-footer-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.rating-tag {
+    color: #ffd700; /* Bintang emas */
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+/* --- CSS Tambahan untuk Halaman Detail (detail.html) --- */
+.detail-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-header {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #f7b731;
+    padding-bottom: 15px;
+}
+
+.detail-name {
+    font-size: 3em;
+    margin: 0;
+}
+
+.detail-category-tag {
+    display: inline-block;
+    background-color: #f7b731;
+    color: #1c1c1c;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.detail-body {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.detail-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+}
+
+.detail-image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.detail-info {
+    flex: 2;
+}
+
+.detail-info h3 {
+    color: #f7b731;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.detail-description {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.detail-meta p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.detail-price {
+    font-weight: 700;
+    color: #ff9933;
+    font-size: 1.3em;
+}
+
+.detail-rating {
+    font-weight: 700;
+    color: #ffd700;
+}
+
+.action-button {
+    background: #f7b731;
+    color: #1c1c1c;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.action-button:hover {
+    background-color: #ff9933;
+    transform: scale(1.05);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+/* Responsifitas */
+@media (max-width: 768px) {
+    .detail-body {
+        flex-direction: column;
+    }
+    .detail-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .detail-name {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Import Google Font (Montserrat) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+
+/* --- 1. Reset Dasar dan Latar Belakang Dark Premium --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Dark Background dari Gambar */
+    background: #101010; /* Hampir hitam */
+    color: #f0f0f0; /* Warna teks terang */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    /* Latar belakang Parallax (tetap dipertahankan untuk kedalaman) */
+    background-image: url('images/surabaya-background.jpg'); /* Pastikan gambar ini gelap */
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    color: #f7b731; /* Aksen Kuning Emas */
+    text-shadow: none; /* Hilangkan shadow dari kode sebelumnya */
+}
+
+/* --- 2. Header & Navigasi (Glassmorphism & Darker) --- */
+header {
+    /* Background lebih gelap dan semi-transparan */
+    background: rgba(30, 30, 30, 0.8); 
+    backdrop-filter: blur(5px); /* Efek Glassmorphism lebih halus */
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Bayangan lebih gelap */
+    border-bottom: none;
+
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    /* Teks dalam kotak hitam dengan gradien emas di gambar */
+    background: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f7b731;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #e0e0e0;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding-bottom: 0;
+}
+
+nav a:hover {
+    color: #f7b731; /* Aksen Kuning Emas saat hover */
+}
+
+nav a::after {
+    /* Hilangkan underline kreatif yang tidak ada di desain */
+    display: none;
+}
+
+/* --- 3. Konten Utama dan Judul --- */
+main {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    z-index: 10; 
+}
+
+main h2 {
+    text-align: left; /* Judul KULINER WAJIB COBA rata kiri */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f0f0f0; /* Judul utama warna putih/terang */
+    padding-left: 20px;
+}
+
+/* Garis dekoratif di bawah H2 */
+main h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #f7b731;
+    margin: 10px 0 0 20px; /* Di bawah dan rata kiri */
+    border-radius: 3px;
+}
+
+/* --- 4. Filter Controls (Sesuai Desain Gambar) --- */
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+#filter-search, #filter-kategori {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    /* Style Darker Input */
+    background: #252525;
+    color: #f0f0f0;
+    font-size: 1em;
+    width: 350px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow ke dalam */
+}
+
+#filter-search::placeholder {
+    color: #999;
+}
+
+#filter-search:focus, #filter-kategori:focus {
+    border: 1px solid #f7b731; /* Border aksen saat fokus */
+    box-shadow: 0 0 10px rgba(247, 183, 49, 0.4);
+    outline: none;
+    background: #303030;
+}
+
+/* --- 5. Tampilan Grid & Kartu Kuliner (Card) --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 30px; /* Kurangi gap sedikit */
+}
+
+.kuliner-card {
+    background: #1a1a1a; /* Background Card Lebih Solid */
+    border-radius: 12px;
+    /* Bayangan Gold di tepi */
+    box-shadow: 0 0 15px rgba(247, 183, 49, 0.1), 0 10px 25px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.kuliner-card:hover {
+    transform: translateY(-5px); /* Efek mengangkat lebih halus */
+    /* Bayangan lebih tegas dan ada glow kuning */
+    box-shadow: 0 0 25px rgba(247, 183, 49, 0.3), 0 15px 40px rgba(0, 0, 0, 0.7); 
+}
+
+.kuliner-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.kuliner-card:hover img {
+    transform: scale(1.02); /* Efek zoom/putar lebih halus */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Judul Card Putih */
+}
+
+.card-body p {
+    color: #ccc;
+    font-size: 0.9em;
+    line-height: 1.4;
+    height: 3.8em; /* Batasi tinggi deskripsi untuk konsistensi */
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/* Kategori Tag di Card */
+.category-tag {
+    display: inline-block;
+    background-color: #f7b731;
+    color: #1a1a1a;
+    font-size: 0.7em;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-footer-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    font-weight: 700;
+    color: #f7b731; /* Harga Kuning Emas */
+    font-size: 1.2em;
+}
+
+.rating-tag {
+    color: #ffd700; 
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+/* --- 6. Desain Tombol (LIHAT DETAIL - Filled Gold Button) --- */
+.card-body button {
+    background: #f7b731; /* Kuning Emas Solid */
+    color: #1a1a1a; /* Teks Hitam */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 100%; /* Tombol Full Lebar */
+}
+
+.card-body button:hover {
+    background-color: #ff9933; /* Sedikit lebih terang saat hover */
+    transform: translateY(-1px);
+}
+
+/* --- 7. Footer --- */
+footer {
+    background-color: #1a1a1a;
+    color: #777;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    font-size: 0.85em;
+    border-top: 1px solid #333; /* Border halus */
+}
+
+/* --- 8. Responsifitas Dasar --- */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+    .filter-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    #filter-search, #filter-kategori {
+        width: 90%;
+    }
+    main h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+    main h2::after {
+        margin: 10px auto 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- 1. Keyframes untuk Animasi Fade-in Gambar --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* --- 2. Modifikasi Tampilan Gambar di Card --- */
+.kuliner-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    
+    /* Tambahkan animasi saat loading */
+    animation: fadeIn 0.8s ease-out forwards;
+    
+    /* Transisi untuk efek hover */
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    
+    /* Border Emas Awal (Halus) */
+    border: 3px solid transparent; 
+}
+
+.kuliner-card:hover img {
+    transform: scale(1.03); 
+    
+    /* Border Emas yang Menarik saat di Hover */
+    border: 3px solid #f7b731; 
+    
+    /* Hilangkan rotasi (rotateZ) agar lebih fokus ke border dan scale */
+}
+
+/* --- 3. CSS untuk Halaman Detail (detail.html) --- */
+.detail-image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    
+    /* Tambahkan border emas pada gambar detail */
+    border: 5px solid #f7b731; 
+}
+
+/* Tambahan: Pastikan gambar di detail.html juga memiliki animasi */
+.detail-image-wrapper img {
+    /* ... (CSS yang sudah ada) ... */
+    animation: fadeIn 1s ease-out forwards; 
+}
